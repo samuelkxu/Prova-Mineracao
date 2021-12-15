@@ -41,6 +41,7 @@ titanic['Sexo'] = titanic['Sexo'].replace(['female'], ['FEMININO'])
 #print (titanic.head(10))
 
 #Questao 7- Sobreviventes class
+
 contSobrevive = titanic.groupby(['ClassePassageiro','Sobrevive'])['Sobrevivente'].count()
 
 print(contSobrevive.head(10))
